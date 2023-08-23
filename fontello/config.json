@@ -1,0 +1,58 @@
+{
+  "name": "",
+  "css_prefix_text": "icon-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "861ab06e455e2de3232ebef67d60d708",
+      "css": "minus",
+      "code": 59392,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "559647a6f430b3aeadbecd67194451dd",
+      "css": "menu",
+      "code": 61641,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "5211af474d3a9848f67f945e2ccaf143",
+      "css": "cancel",
+      "code": 59393,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "399ef63b1e23ab1b761dfbb5591fa4da",
+      "css": "right-open",
+      "code": 59394,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "ccddff8e8670dcd130e3cb55fdfc2fd0",
+      "css": "down-open",
+      "code": 59395,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "05a2f4c4839012434774cc1ceb4c0f9b",
+      "css": "download-alt",
+      "code": 59396,
+      "src": "elusive"
+    },
+    {
+      "uid": "61a783a38ab7b1e312fc5cd9b13fd349",
+      "css": "download",
+      "code": 59397,
+      "src": "elusive"
+    },
+    {
+      "uid": "f5999a012fc3752386635ec02a858447",
+      "css": "download-cloud",
+      "code": 61677,
+      "src": "fontawesome"
+    }
+  ]
+}

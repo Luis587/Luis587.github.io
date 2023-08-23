@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+body{
+    background: url(https://img1.wallspic.com/crops/4/7/7/9/3/139774/139774-cabeza-el_modelado_en_3d-ilustracion-humanos-quijada-3840x2160.jpg);
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+}
+
+.capa{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: rgba(43, 42, 42, 0.4);
+    z-index: -1;
+    top: 0;left: 0;
+}
+
+.header{
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0;left: 0;
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.container .btn-menu, .logo{
+    float: left;
+    line-height: 70px;
+}
+.container .btn-menu label{
+    color: #e0d9d9;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.logo h1{
+    color: #fff;
+    font-weight: 400;
+    font-size: 22px;
+    margin-left: 10px;
+}
+
+.container .menu{
+    float: right;
+    line-height: 70px;
+}
+
+.container .menu a{
+    display: inline-block;
+    padding: 15px 10px;
+    line-height: normal;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+    font-size: 15px;
+}
+
+.container .menu a:hover{
+    border-bottom: 2px solid #c7c7c7;
+    padding: 5px 10px;
+}
+
+#btn-menu{
+    display: none;
+}
+
+.container-menu{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100vh;
+    top: 0;left: 0;
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#btn-menu:checked ~ .container-menu{
+    opacity: 1;
+    visibility: visible;
+}
+
+.cont-menu{
+    width: 100%;
+    max-width: 250px;
+    background: #1c1c1c;
+    height: 100vh;
+    position: relative;
+    transition: all 500ms ease;
+    transform: translateX(-100%);
+}
+
+#btn-menu:checked ~ .container-menu .cont-menu{
+    transform: translateX(0%);
+}
+
+.cont-menu nav{
+    transform: translateY(15%);
+}
+
+.cont-menu nav a{
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: #c7c7c7;
+    border-left: 5px solid transparent;
+    transition: all 400ms ease;
+}
+
+.cont-menu nav a:hover{
+    border-left: 5px solid #c7c7c7;
+    background: #1f1f1f;
+}
+
+.cont-menu label{
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.primero{
+    margin-top: 780px;
+    margin-bottom: 0px;
+    height: 120vh;
+    background-color: #393737;
+    padding: 30px 100px;
+    text-align: left;
+    color: #fff;
+}
+
+.primero h2{
+    text-align: left;
+    font-size: 40px;
+}
+
+.primero .img{
+    display: flex;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.segundo{
+    margin-top: 50px;
+    margin-bottom: 0px;
+    height: 1350vh;
+    background-color: #393737;
+    padding: 30px 100px;
+    text-align: left;
+    color: #fff;
+    position: relative;
+}
+
+.segundo h2{
+    text-align: center;
+    font-size: 40px;
+}
+
+
+.segundo .im{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.segundo .descarga{
+    display: flex;
+    justify-content: center;
+}
+
+.segundo .descarga .btn-descarga{
+    display: block;
+    width: 80px;
+    height: 80px;
+    background: #c7c7c7;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 80px;
+    font-size: 30px;
+    color: aqua;
+    transition: all 400ms ease-out;
+}
+
+.segundo .descarga .btn-descarga:hover{
+    transform: scale(1.1);
+}
+
+.tercero{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 90vh;
+    background-color: #393737;
+    padding: 250px 100px;
+    text-align: left;
+    color: #fff;
+    position: relative;
+}
+
+.tercero h2{
+    text-align: center;
+    font-size: 40px;
+}
+
+.tercero .descarga{
+    display: flex;
+    justify-content: center;
+}
+
+.tercero .descarga .btn-descarga{
+    display: block;
+    width: 80px;
+    height: 80px;
+    background: #c7c7c7;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 80px;
+    font-size: 30px;
+    color: aqua;
+    transition: all 400ms ease-out;
+}
+
+.tercero .descarga .btn-descarga:hover{
+    transform: scale(1.1);
+}
+
+
+footer{
+    background: #000000;
+}
+
+.footerContainer{
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+
+.footerContainer h2{
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+}
+
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+
+.socialIcons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.socialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+}
+
+.socialIcons a:hover{
+    background-color: #000000;
+    transition: 0.5s;
+}
+
+.socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+
+.footerNav{
+    margin: 30px 0;
+}
+
+.footerNav u1{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.footerNav u1 li a{
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.footerNav u1 li a:hover{
+    opacity: 1;
+}
+
+.footerBottom{
+    background-color: #000000;
+    padding: 20px;
+    text-align: center;
+}
+
+.footerBottom p{
+    color: white;
+}
+
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+@media (max-width:700px){
+    .footerNav u1{
+        flex-direction: column;
+    }
+    .footerNav u1 li{
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+}

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Curriculum Vitae</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="fontello/css/fontello.css">
+    <script src="https://kit.fontawesome.com/bd344212b0.js" crossorigin="anonymous"></script> 
+</head>
+<body>
+    <header class="header">
+       <div class="container">
+       <div class="btn-menu">
+            <label for="btn-menu" class="icon-menu">
+            </label>
+       </div>
+            <div class="logo">
+                <h1>Portafolio</h1>
+            </div>
+            <nav class="menu">
+                <a href="#">Inicio</a>
+                <a href="#Sobre mi..">Sobre mi</a>
+                <a href="#Proyectos">Proyectos</a>
+                <a href="#CV">CV</a>\
+                <a href="#Contacto">Contacto</a>
+            </nav>
+        </div>
+    </header>
+    <div class="capa"></div>
+<input type="checkbox" id="btn-menu">
+<div class="container-menu">
+    <div class="cont-menu">
+        <nav>
+            <a href="#">Portafolio</a>
+            <a href="#Sobre mi..">Sobre mi</a>
+            <a href="#Proyectos">Proyectos</a>
+            <a href="#CV">CV</a>
+            <a href="#Contacto">Contacto</a>
+        </nav>
+        <label for="btn-menu" class="icon-cancel"></label>
+    </div>
+</div>
+
+<section class="primero">
+    <div>
+        <br><h2><a name="Sobre mi.."><b>Sobre mi..</b></a></h2></br>
+        <br><p>Hola, soy Luis Eduardo Alvarado Cruz, actualmente culmine mis estudios en la Universidad Politecnica Salesiana, donde adquirí el título de tercer nivel en Ing. Electrónica y Automatización. Mi interés por la tecnología y la innovación me llevó a explorar el campo de la electrónica y la automatización, donde he adquirido habilidades valiosas para diseñar y optimizar sistemas inteligentes que mejoran la eficiencia y la calidad de vida.</p></br>
+        <br><p>Mi enfoque se centra en aprovechar las soluciones de automatización para resolver problemas del mundo real. He tenido la oportunidad de trabajar en proyectos de control de procesos, sistemas embebidos y domótica, donde he aplicado mis conocimientos en electrónica y programación para crear soluciones que hacen la vida más cómoda y eficiente.</p></br> 
+        <br><p>Me emociona la idea de colaborar con empresas que buscan innovar y mejorar sus operaciones a través de la tecnología. Mi experiencia en proyectos desafiantes y mi capacidad para aprender de manera continua me permiten aportar soluciones creativas y funcionales a los desafíos técnicos que enfrenta el mundo actual.</p></br>
+    </div>
+    <div class="img">
+        <img src="cv.png" alt="no vale" width="300">
+        </div>
+</section>
+
+<section class="segundo">
+    <div>
+        <br><h2><a name="Proyectos"><b>Proyectos</b></a></h2></br>
+        <br><li><b>Desarrollo a industria 4.0, para una estación de distribución (Festo).</b></li></br>
+        <br><p>La estación de Distribución separa piezas. Es posible colocar hasta ocho piezas en el tubo del almacén de apilado. Dispone de un cilindro de doble efecto, el cual expulsa las piezas individualmente. El módulo Cambiador sujeta la pieza separada por medio de una ventosa. El brazo del cambiador, que es accionado por un actuador giratorio, va ha transportar la pieza al punto de transferencia de la estación siguiente.</p></br>
+        <br><p>Lo que se realizó para dicha estación fue agregarle un HMI en Node-red, con el objetivo de poder operar la estación en una pantalla y no directamente en el panel que contiene la estación, pero para hacerle un proceso mucho más eficiente se realizó un Scada en Node-red, donde va mostrando el proceso que realiza. Para el enfoque a la industria 4.0 se hizo que los datos vayan a la nube, de igual manera para poder operar desde el celular y poder ver que sucede con el mismo. Adicional se dió la comunicación con un asistente de voz, para que de igual manera ejecute el proceso.</p></br>
+        <div class="im">
+            <img src="DO.PNG" alt="no vale" width="600">
+        </div>
+        <br><p>En la siguiente imagen se puede visualizar, que se uso un microcontrolador "ESP-32", el cual permite operar de manera inalámbrica para la comunicacion con Node-red por medio de un broker.</p></br>
+        <div class="im">
+            <img src="second.png" alt="no vale" width="600">
+        </div>
+        <br><p>Para los circuítos de acoplamiento se uso relés, donde se iba a enviar los datos desde Node-red a la Estación de distribución, para el retorno de datos lo que se uso fue un divisor de tensión para que los 24V que arroja el PLC, baje a 3V ya que ese es el voltaje que puede soportar la ESP-32, a continuación, el circuito desarrollado:</p></br>
+        <div class="im">
+            <img src="tercero.png" alt="no vale" width="600">
+        </div>
+        <br><p>En Node-red, a continuación se podrá ver todo lo que se realizó, un Inicio de sesión, para hacer confidencial y que cualquier persona externa no tenga acceso a su uso, dos partes antes del inicio de sesión, existe la parte de ayuda y la parte de activación de actuadores de manera independiente para ver su funcionamiento y sirva de demostración. También se refleja partes de los nodos donde se podrá ver el "MQTT OUT", que es el broker de comunicación, los nodos de "Blynk", que es la nube con la que se trabaja en el proyecto y el nodo de "Alexa-Home-Skills", que es el nodo que permite conectarse con el asistente de voz.</p></br>
+        <div class="im">
+            <img src="cuarto.png" alt="no vale" width="600">
+        </div>
+        <div class="im">
+            <img src="quinto.png" alt="no vale" width="600">
+        </div>
+        <div class="im">
+            <img src="sexto.png" alt="no vale" width="600">
+        </div>
+        <div class="im">
+            <img src="septimo.png" alt="no vale" width="600">
+        </div>
+        <div class="im">
+            <img src="octavo.png" alt="no vale" width="600">
+        </div>
+        <div class="im">
+            <img src="noveno.png" alt="no vale" width="600">
+        </div>
+
+        <br><li><b>Vision por computador para Estación de distribución (Festo).</b></li></br>
+        <br><p>Este proyecto se basa en la activacion de la estación mediante el color correcto, que en el caso presente, el color correcto era el rojo, entonces al momento de detectar en el almacén de fichas el color "Rojo", la estación empezaba el proceso, caso contrario al detectar fichas de diferentes colores el proceso no opera hasta detectar el color correcto. Para esto se creó una interfaz donde se puede operar desde ahi la estación, activar la cámara para distinción de fichas y el conteo de las mismas, se programó en Python de igual manera con el microcontrolador "ESP-32". Para las conexiones, también se uso relés, para el envio de datos desde la interfaz en python a la estación. A continuación, se visulizara la interfaz de accionamiento al proceso.</p></br>
+        <div class="im">
+            <img src="decimo.png" alt="no vale" width="600">
+        </div>  
+        <br><p>Si se desea saber más acerca del proceso realizado, se podrán descargar el diagrama de flujo, para un mejor entendimiento:</p></br> 
+        <div class="descarga">
+            <br><br><a href="DIAGRAMADEFLUJOPYTHON-ARDUINO.pdf" class="btn-descarga icon-download" download="Diagrama de flujo" title="Descarcar diagrama de flujo"></a></br></br>
+        </div>
+
+        <br><li><b>Desarrollo de un elevador (programación en tia portal), simulación del elevador en Factory IO.</b></li></br>
+        <br><p>El objetivo del desarrollo del elevador, fue para ver condiciones de programación referente a un elevador en Tia Portal, de igual manera para poder simular en Factory IO y poder visualizar el correcto funcionamiento previo a la implementación. En la siguiente imagen se puede visualizar la creacion del elevador en Factory IO.</p></br>
+        <div class="im">
+            <img src="onceavo.png" alt="no vale" width="400">
+        </div>
+        <br><p>Si se desea visualizar el elevador de Factory IO, para ver como se dividio cada piso y ver donde se ubicaron los sensores para que detecte cuando se encuentre en cada piso y pueda parar, dale clic en descargar:</p></br>
+        <div class="descarga">
+            <br><br><a href="Elevador Proyecto.factoryio" class="btn-descarga icon-download" download="Elevador" title="Elevador Factory IO"></a></br></br>
+        </div>
+        <br><li><b>Implementación de elevador, con acoplamineto a un asistente de voz.</b></li></br>
+        <br><p>Se implementó un elevador dentro de un espacio de trabajo, donde su principal funcion es bajar y subir una plataforma por medio del asistente de voz, dandole comandos de subir o bajar pista.</p></br>
+        <br><p>Este proyecto se realizó en Node-red con los nodos de Alexa-Home-Skills y su medio de comunicación, un broker el cual mandaba la información a la ESP-32, donde la misma estaba encargada de mandar pulsos hacia los relés. Digo relés porque no se usó un puente H, sino el control de giro se dio por medio de relés para no pasar del presupuesto.</p></br>
+        <div class="im">
+            <img src="doceavo.png" alt="no vale" width="600">
+        </div>
+        <br><p>Dado que los motores, no eran los óptimos para dicho proyecto, se hizo acoplamiento para el control de los mismos, donde se colocaron poleas y detras de las poleas un encoder con una rueda dentada, la cual fue diseñada e impresa en una impresora 3D.</p></br>
+        <br><p>Aqui puedes descargar el diseño 3D, de la rueda dentada para los motores:</p></br>
+        <div class="descarga">
+            <br><br><a href="Rueda Dentada v2 v1.stl" class="btn-descarga icon-download" download="Rueda dentada" title="Rueda dentada para motores"></a></br></br>
+        </div>
+        <br><li><b>Creación de juegos desarrollados en Python.</b></li></br>
+        <br><p>Se creo dos juegos enfocados a esquivar obstáculos.</p></br>
+        <br><p>El primer juego consiste en ingresar un usuario y contraseña que ya se encuentran establecidos dentro del codigo, para que posterior a eso, la maquina te va preguntando si vas a esquivar el siguinete obstáculo, tienes opciones de "Si" y "No", donde vas contestando, en el caso que esquives el obstáculo te saldrá un mensaje de "Mut bien! has evitado el obstáculo" caso contrario "¡Oh no! Has chocado contra el obstáculo. Fin del juego.", asi como lo podremos ver en la siguiente imagen:</p></br>
+        <div class="im">
+            <img src="treceavo.png" alt="no vale" width="600">
+        </div>
+        <br><p>Para el siguiente juego se creó ya una interfaz dinámica, donde se puede operar para esquivar los obstáculos presentes en forma de cuadrados.</p></br>
+        <div class="im">
+            <img src="catorceavo.png" alt="no vale" width="600">
+        </div>
+        <br><p>Si desean probar o jugarlos, aqui lo pueden descargar:</p></br>
+        <div class="descarga">
+            <br><br><a href="Game/esquivo.py" class="btn-descarga icon-download" download="Juego esquivo" title="Juego esquivo"></a></br></br>
+            <br><br><a href="Game/personita.py" class="btn-descarga icon-download" download="Juego dinámico cuadrados" title="Juego dinámico cuadrados"></a></br></br>
+        </div>
+        <br><li><b>Entrenamiento de una RNA para el control de un servomotor en Python.</b></li></br>
+        <br><p>Para este proyecto, mediante un servomotor se tiene que dar el control mediante un sensor de proximidad, esto quiere decir que mientras un objeto se acerque al sensor de proximidad, el servo motor cambia de giro y empieza a girar lento, pero si el objeto que esta detectando el sensor de proximidad, se aleja va aumentando su velocidad hasta no detectar nada y realiza el cambio de giro con una velocidad constante, hasta que de nuevo el sensor de proximidad detecte un objeto y controle al servomotor.</p></br>
+        <br><p>En la siguiente imagen podremos ver el esquema de conexiones.</p></br>
+        <div class="im">
+            <img src="quinceavo.png" alt="no vale" width="600">
+        </div>
+        <br><p>Para que puedan visualizar, el entrenamiento que se realizó, adjuntaré el codigo en Python para descargar.</p></br>
+        <div class="descarga">
+            <br><br><a href="entrenamiento.py" class="btn-descarga icon-download" download="Entrenamiento RNA" title="Entrenamiento RNA"></a></br></br>
+        </div>
+        <br><li><b>Desarrollo e implementación de robot minizumo.</b></li></br>
+        <br><p>El objetivo del proyecto fue crear un robot minizumo de pelea, que se pueda manipular de dos modos, un modo autónomo y otro remotamente.</p></br>
+        <br><p>En el modo autónomo, se crearon estratégias para que durante la batalla, el robot mediante sensores pueda detectar al oponente y reaccionar para que asi pueda sacar del dojo al contrincante y ganar. Para esto, se desarrollo el código en Arduino, donde se programaron a los sensores y las estratégias, de igual manera se creó una placa PCB para las conexiones, debido a que tiene que ir todo compacto dentro del robot, hasta para mayor comodidad y no tener cables por fuera. Por último se realizó la conexión a un mando para maniobrarlo remotamente.</p></br> 
+        <br><p>En la siguiente imagen se podrá visualizar la creacion de la placa, que fue desarrollada en Kicad.</p></br>
+        <div class="im">
+            <img src="diesiseisavo.png" alt="no vale" width="600">
+        </div>
+        <br><p>Si desea ver el desarrollo de la placa en Kicad, dar clic en el icono para descargar:</p></br>
+        <div class="descarga">
+            <br><br><a href="placaminisumo/mini/mini.kicad_pcb" class="btn-descarga icon-download" download="PCB Minizumo" title="PCB Minizumo"></a></br></br>
+        </div>
+        <br><p>De igual manera, si se desea ver el diseño 3D del chasis del robot Minizumo, da clic en descargar:</p></br>
+        <div class="descarga">
+            <br><br><a href="case_final.stl" class="btn-descarga icon-download" download="Case Minizumo" title="Case Minizumo"></a></br></br>
+        </div>
+    </div>
+</section>
+
+<section class="tercero">
+    <div>
+        <br><h2><a name="CV"><b>Descarcar CV</b></a></h2></br> 
+    </div>
+    <div class="descarga">
+        <br><br><a href="CV LUIS EDUARDO ALVARADO CRUZ.pdf" class="btn-descarga icon-download" download="CV Luis Alvarado Cruz" title="CV Luis Alvarado Cruz"></a></br></br>
+    </div>
+    
+</section>
+
+<footer>
+    <div class="footerContainer">
+        <div>
+            <br><h2><a name="Contacto"><b>Contacto</b></a></h2></br>
+        </div>
+        <div class="socialIcons">
+            <a href="https://w.app/HomeAutoationCorp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="www.linkedin.com/in/luis-alvarado-cruz-327206266"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://twitter.com/luis1799215"><i class="fa-brands fa-x"></i></a>
+            <a href="https://github.com/Luis587"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <div class="footerNav">
+            <u1>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#Sobre mi..">Sobre mi</a></li>
+                <li><a href="#Proyectos">Proyectos</a></li>
+                <li><a href="#CV">CV</a></li>
+            </u1>
+        </div>
+    </div>
+    <div class="footerBottom">
+        <p>Copyright &copy; 2023; Designed by <span class="designer">Luis</span></p> 
+    </div>
+</footer>
+
+</body>
+</html>
