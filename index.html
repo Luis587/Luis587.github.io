@@ -2,201 +2,502 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Portafolio Luis Alvarado Cruz</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="fontello/css/fontello.css">
-    <script src="https://kit.fontawesome.com/bd344212b0.js" crossorigin="anonymous"></script> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-    <header class="header">
-       <div class="container">
-       <div class="btn-menu">
-            <label for="btn-menu" class="icon-menu">
-            </label>
-       </div>
+    <!--Menu Encabezado-->
+    <div class="contenedor-header">
+        <header>
             <div class="logo">
-                <h1>Portafolio</h1>
+                <i class="fa-solid fa-xmarks-lines" style="color: #ffffff;"></i>
             </div>
-            <nav class="menu">
-                <a href="#">Inicio</a>
-                <a href="#Sobre mi..">Sobre mi</a>
-                <a href="#Proyectos">Proyectos</a>
-                <a href="#CV">CV</a>\
-                <a href="#Contacto">Contacto</a>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">HABILIDADES</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">EDUCACION & EXPERIENCIA</a></li>
+                    <li><a href="#portafolio" onclick="seleccionar()">PROYECTOS</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
             </nav>
-        </div>
-    </header>
-    <div class="capa"></div>
-<input type="checkbox" id="btn-menu">
-<div class="container-menu">
-    <div class="cont-menu">
-        <nav>
-            <a href="#">Portafolio</a>
-            <a href="#Sobre mi..">Sobre mi</a>
-            <a href="#Proyectos">Proyectos</a>
-            <a href="#CV">CV</a>
-            <a href="#Contacto">Contacto</a>
-        </nav>
-        <label for="btn-menu" class="icon-cancel"></label>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+
+
     </div>
-</div>
+    <!--SECCION INICIO-->
+     <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="edu.png" alt="">
+            </div>
+            <h1>LUIS ALVARADO</h1>
+            <h2>Ingeniero de Electrónica & Automatización - Master IoT</h2>
+            <div class="redes">
+                <a href="https://www.linkedin.com/in/luis-alvarado-cruz-327206266?trk=contact-info"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/Luis587"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/iot_developments?igsh=MXVudGx3aDQ2bHdicA%3D%3D&utm_source=qr"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/luis1799215"><i class="fa-brands fa-x"></i></a>
+            </div>
+        </div>
+    </section>
+    <!--SECCION SOBRE MI-->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Luis Alvarado.</span> Hola, soy Ingeniero en Electrónica y Automatización, graduado de la Universidad Politécnica Salesiana. 
+            Mi pasión por la tecnología y la innovación me llevó a especializarme aún más, obteniendo un Máster en Internet de las Cosas (IoT) por la Universidad Internacional de La Rioja, en Madrid. 
+            A lo largo de mi formación y experiencia, he desarrollado proyectos orientados a la automatización industrial, el diseño de sistemas embebidos y la integración de soluciones inteligentes basadas en IoT. Me motiva crear tecnología que tenga un impacto real en la eficiencia de los procesos y en la vida de las personas. Soy una persona proactiva, con mentalidad analítica y en constante aprendizaje, siempre en búsqueda de nuevos retos que me permitan crecer tanto personal como profesionalmente.</p>
 
-<section class="primero">
-    <div>
-        <br><h2><a name="Sobre mi.."><b>Sobre mi..</b></a></h2></br>
-        <br><p>Hola me presento, soy Luis Eduardo Alvarado Cruz, Ingeniero en Electrónica y Automatización, actualmente me encuentro realizando el Master en IoT (Internet of things) en la Universidad de la Rioja (Madrid, España). Mi interés por la tecnología y la innovación me llevó a explorar el campo de la electrónica y la automatización, donde he adquirido habilidades valiosas para diseñar y optimizar sistemas inteligentes que mejoran la eficiencia y la calidad de vida.</p></br>
-        <br><p>Mi enfoque se centra en aprovechar las soluciones de automatización para resolver problemas del mundo real. He tenido la oportunidad de trabajar en proyectos de control de procesos, sistemas embebidos y domótica, donde he aplicado mis conocimientos en electrónica y programación para crear soluciones que hacen la vida más cómoda y eficiente.</p></br> 
-        <br><p>Me emociona la idea de colaborar con empresas que buscan innovar y mejorar sus operaciones a través de la tecnología. Mi experiencia en proyectos desafiantes y mi capacidad para aprender de manera continua me permiten aportar soluciones creativas y funcionales a los desafíos técnicos que enfrenta el mundo actual.</p></br>
-    </div>
-    <div class="img">
-        <img src="cv.png" alt="no vale" width="300">
-        </div>
-</section>
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            17-02-1999
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            +593 99 597 8462
+                        </li>
+                        <li>
+                            <strong>Correo Electrónico</strong>
+                            luisalvarado9917@hotmail.com
+                        </li>
+                        <li>
+                            <strong>Sitio Web</strong>
+                            https://hacorporation.github.io
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Guajalo, Quito - Ecuador
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>FREELANCE</span>
+                        </li>
+                    </ul>
+                </div>
 
-<section class="segundo">
-    <div>
-        <br><h2><a name="Proyectos"><b>Proyectos</b></a></h2></br>
-        <br><li><b>Desarrollo a industria 4.0, para una estación de distribución (Festo).</b></li></br>
-        <br><p>La estación de Distribución separa piezas. Es posible colocar hasta ocho piezas en el tubo del almacén de apilado. Dispone de un cilindro de doble efecto, el cual expulsa las piezas individualmente. El módulo Cambiador sujeta la pieza separada por medio de una ventosa. El brazo del cambiador, que es accionado por un actuador giratorio, va ha transportar la pieza al punto de transferencia de la estación siguiente.</p></br>
-        <br><p>Lo que se realizó para dicha estación fue agregarle un HMI en Node-red, con el objetivo de poder operar la estación en una pantalla y no directamente en el panel que contiene la estación, pero para hacerle un proceso mucho más eficiente se realizó un Scada en Node-red, donde va mostrando el proceso que realiza. Para el enfoque a la industria 4.0 se hizo que los datos vayan a la nube, de igual manera para poder operar desde el celular y poder ver que sucede con el mismo. Adicional se dió la comunicación con un asistente de voz, para que de igual manera ejecute el proceso.</p></br>
-        <div class="im">
-            <img src="DO.PNG" alt="no vale" width="600">
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-futbol"></i>
+                            <span>FÚTBOL</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MÚSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-dumbbell"></i>
+                            <span>GIMNASIO</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-apple"></i>
+                            <span>MAC IOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+           <a href="CV LUIS ALVARADO CRUZ.pdf" download>
+                <button>
+                    Descargar CV <i class="fa-solid fa-cloud-arrow-down"></i>
+                    <span class="overlay"></span>
+                </button>
+            </a>
         </div>
-        <br><p>En la siguiente imagen se puede visualizar, que se uso un microcontrolador "ESP-32", el cual permite operar de manera inalámbrica para la comunicacion con Node-red por medio de un broker.</p></br>
-        <div class="im">
-            <img src="second.png" alt="no vale" width="600">
+    </section>
+    <!--SECCION HABILIDADES-->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Habilidades</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Manejo Software</h3>
+                    <div class="skill">
+                        <span>PYTHON</span>
+                        <div class="barra-skill">
+                            <div class="progreso python">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso htmlcss">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>NODE-RED</span>
+                        <div class="barra-skill">
+                            <div class="progreso nodered">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>ARDUINO</span>
+                        <div class="barra-skill">
+                            <div class="progreso arduino">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>FUSION 360</span>
+                        <div class="barra-skill">
+                            <div class="progreso fusion">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>MYSQL</span>
+                        <div class="barra-skill">
+                            <div class="progreso mysql">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>AWS</span>
+                        <div class="barra-skill">
+                            <div class="progreso aws">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>TIA PORTAL & FACTORY IO</span>
+                        <div class="barra-skill">
+                            <div class="progreso tia">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>BLENDER</span>
+                        <div class="barra-skill">
+                            <div class="progreso blender">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>KICAD & LTSPICE</span>
+                        <div class="barra-skill">
+                            <div class="progreso kicad">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Habilidades Profesionales</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso comunicacion">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso trabajo">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso creatividad">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso dedicacion">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proyect Management</span>
+                        <div class="barra-skill">
+                            <div class="progreso proyect">
+                                <span>94%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <br><p>Para los circuítos de acoplamiento se uso relés, donde se iba a enviar los datos desde Node-red a la Estación de distribución, para el retorno de datos lo que se uso fue un divisor de tensión para que los 24V que arroja el PLC, baje a 3V ya que ese es el voltaje que puede soportar la ESP-32, a continuación, el circuito desarrollado:</p></br>
-        <div class="im">
-            <img src="tercero.png" alt="no vale" width="600">
-        </div>
-        <br><p>En Node-red, a continuación se podrá ver todo lo que se realizó, un Inicio de sesión, para hacer confidencial y que cualquier persona externa no tenga acceso a su uso, dos partes antes del inicio de sesión, existe la parte de ayuda y la parte de activación de actuadores de manera independiente para ver su funcionamiento y sirva de demostración. También se refleja partes de los nodos donde se podrá ver el "MQTT OUT", que es el broker de comunicación, los nodos de "Blynk", que es la nube con la que se trabaja en el proyecto y el nodo de "Alexa-Home-Skills", que es el nodo que permite conectarse con el asistente de voz.</p></br>
-        <div class="im">
-            <img src="cuarto.png" alt="no vale" width="600">
-        </div>
-        <div class="im">
-            <img src="quinto.png" alt="no vale" width="600">
-        </div>
-        <div class="im">
-            <img src="sexto.png" alt="no vale" width="600">
-        </div>
-        <div class="im">
-            <img src="septimo.png" alt="no vale" width="600">
-        </div>
-        <div class="im">
-            <img src="octavo.png" alt="no vale" width="600">
-        </div>
-        <div class="im">
-            <img src="noveno.png" alt="no vale" width="600">
-        </div>
+    </section>
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Currículum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Bachillerato</h4>
+                        <span class="casa">Unidad Educativa Cristiano Verbo</span>
+                        <span class="fecha">2011 - 2017</span>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Ingeniero Electrónica y Automatización</h4>
+                        <span class="casa">Universidad Politécnica Salesiana</span>
+                        <span class="fecha">2019 - 2023</span>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Master Internet de las cosas (IoT)</h4>
+                        <span class="casa">Universidad de la Rioja - Madrid</span>
+                        <span class="fecha">2023 - 2025</span>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
 
-        <br><li><b>Vision por computador para Estación de distribución (Festo).</b></li></br>
-        <br><p>Este proyecto se basa en la activacion de la estación mediante el color correcto, que en el caso presente, el color correcto era el rojo, entonces al momento de detectar en el almacén de fichas el color "Rojo", la estación empezaba el proceso, caso contrario al detectar fichas de diferentes colores el proceso no opera hasta detectar el color correcto. Para esto se creó una interfaz donde se puede operar desde ahi la estación, activar la cámara para distinción de fichas y el conteo de las mismas, se programó en Python de igual manera con el microcontrolador "ESP-32". Para las conexiones, también se uso relés, para el envio de datos desde la interfaz en python a la estación. A continuación, se visulizara la interfaz de accionamiento al proceso.</p></br>
-        <div class="im">
-            <img src="decimo.png" alt="no vale" width="600">
-        </div>  
-        <br><p>Si se desea saber más acerca del proceso realizado, se podrán descargar el diagrama de flujo, para un mejor entendimiento:</p></br> 
-        <div class="descarga">
-            <br><br><a href="DIAGRAMADEFLUJOPYTHON-ARDUINO.pdf" class="btn-descarga icon-download" download="Diagrama de flujo" title="Descarcar diagrama de flujo"></a></br></br>
+                <div class="col derecha">
+                    <h3>Experiencia Laboral</h3>
+                    <div class="item der">
+                        <h4>Ingeniero Eléctrico y Automatizador</h4>
+                        <span class="casa">Apifractal S.A.S</span>
+                        <span class="fecha">2022 - 2023</span>
+                        <p>- Desarrollo de proyecto para Corporación la Favorita, donde fui el encargado de realizar las conexiones del tablero eléctrico, sensores y actuadores, de igual manera se implementó un elevador, el cual era el encargado en el transporte de ingredientes hacia los tanques de cocción.
+                           - Implementación de sistema de alarmas contra incendios e instalación de máquina de empaquetado para la empresa Legz.
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Desarrollador IoT</h4>
+                        <span class="casa">Asicai</span>
+                        <span class="fecha">2024 - 2024</span>
+                        <p>Desarrollo de un sistema IoT, para una planta de tratamiento de agua potable, con el propósito en él envió de datos a la nube (AWS) y poder visualizarlos para operar el proceso remotamente desde el servicio Amazon Grafana.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Ingeniero Electrónico & Desarrollador IoT</h4>
+                        <span class="casa">IoT Developments</span>
+                        <span class="fecha">2023 (Actual)</span>
+                        <p>- Implementación de sistema automático Iot junto con la nube (Blynk), para puertas batientes de conjuntos residenciales, con el objetivo de controlar las puertas desde el móvil, para el acceso y salida eficaz.
+                           - Instalación de cámaras de seguridad inteligentes y Smart locks.
+                           - Creación de un sistema Electrónico & IoT, el cual se basa en la ecualización de baterías de Iones de Litio, con el fin de aumentar la vida útil de las baterías de los carros híbridos y eléctricos.
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Ingeniero Electrónico</h4>
+                        <span class="casa">Jalstech</span>
+                        <span class="fecha">2022 (Actual)</span>
+                        <p>Inspección y reparación de equipos médicos.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <br><li><b>Desarrollo de un elevador (programación en tia portal), simulación del elevador en Factory IO.</b></li></br>
-        <br><p>El objetivo del desarrollo del elevador, fue para ver condiciones de programación referente a un elevador en Tia Portal, de igual manera para poder simular en Factory IO y poder visualizar el correcto funcionamiento previo a la implementación. En la siguiente imagen se puede visualizar la creacion del elevador en Factory IO.</p></br>
-        <div class="im">
-            <img src="onceavo.png" alt="no vale" width="400">
+    </section>
+    <!-- SECCION PORTFOLIO -->
+    <section id="portafolio" class="portafolio">
+        <div class="contenido-seccion">
+            <h2>Proyectos</h2>
+            <div class="galeria">
+                <a href="#" target="_blank">
+                    <div class="proyecto">
+                        <img src="DO.PNG" alt="">
+                        <div class="overlay">
+                            <h3>Desarrollo industria 4.0, Estación de distribución (Festo).</h3>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="proyecto">
+                        <img src="vc.png" alt="">
+                        <div class="overlay">
+                            <h3>Visión por computador para Estación de distribución (Festo).</h3>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">    
+                    <div class="proyecto">
+                        <img src="onceavo.png" alt="">
+                        <div class="overlay">
+                            <h3>Simulación de elevador en Factory IO.</h3>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="proyecto">
+                        <img src="enhanced_tesis.png" alt="">
+                        <div class="overlay">
+                            <h3>Elevador controlado por asistente de voz.</h3>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="proyecto">
+                        <img src="catorceavo.png" alt="">
+                        <div class="overlay">
+                            <h3>Juegos en Python</h3>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="proyecto">
+                        <img src="enhanced_rna.png" alt="">
+                        <div class="overlay">
+                            <h3>Entrenamiento de una RNA</h3>
+                        </div>   
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="proyecto">
+                        <img src="sisiot.png" alt="">
+                        <div class="overlay">
+                            <h3>Sistema IoT (Siembra de Cacao)</h3>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="proyecto">
+                        <img src="ecualizador.png" alt="">
+                        <div class="overlay">
+                            <h3>Ecualizador Batería Iones de Litio</h3>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="proyecto">
+                        <img src="dron.png" alt="">
+                        <div class="overlay">
+                            <h3>Show de drones</h3>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="proyecto">
+                        <img src="3d.png" alt="">
+                        <div class="overlay">
+                            <h3>Diseño 3D</h3>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="proyecto">
+                        <img src="pcbdiseno.png" alt="">
+                        <div class="overlay">
+                            <h3>Diseño PCB</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
         </div>
-        <br><p>Si se desea visualizar el elevador de Factory IO, para ver como se dividio cada piso y ver donde se ubicaron los sensores para que detecte cuando se encuentre en cada piso y pueda parar, dale clic en descargar:</p></br>
-        <div class="descarga">
-            <br><br><a href="Elevador Proyecto.factoryio" class="btn-descarga icon-download" download="Elevador" title="Elevador Factory IO"></a></br></br>
+    </section>
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>Contacto</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Asunto">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="mapa.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Guajalo 170131, Quito - Ecuador
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamanos: +593 99 597 8462 
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Correo Electrónico: luisalvarado9917@hotmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-        <br><li><b>Implementación de elevador, con acoplamineto a un asistente de voz.</b></li></br>
-        <br><p>Se implementó un elevador dentro de un espacio de trabajo, donde su principal funcion es bajar y subir una plataforma por medio del asistente de voz, dandole comandos de subir o bajar pista.</p></br>
-        <br><p>Este proyecto se realizó en Node-red con los nodos de Alexa-Home-Skills y su medio de comunicación, un broker el cual mandaba la información a la ESP-32, donde la misma estaba encargada de mandar pulsos hacia los relés. Digo relés porque no se usó un puente H, sino el control de giro se dio por medio de relés para no pasar del presupuesto.</p></br>
-        <div class="im">
-            <img src="doceavo.png" alt="no vale" width="600">
-        </div>
-        <br><p>Dado que los motores, no eran los óptimos para dicho proyecto, se hizo acoplamiento para el control de los mismos, donde se colocaron poleas y detras de las poleas un encoder con una rueda dentada, la cual fue diseñada e impresa en una impresora 3D.</p></br>
-        <br><p>Aqui puedes descargar el diseño 3D, de la rueda dentada para los motores:</p></br>
-        <div class="descarga">
-            <br><br><a href="Rueda Dentada v2 v1.stl" class="btn-descarga icon-download" download="Rueda dentada" title="Rueda dentada para motores"></a></br></br>
-        </div>
-        <br><li><b>Creación de juegos desarrollados en Python.</b></li></br>
-        <br><p>Se creo dos juegos enfocados a esquivar obstáculos.</p></br>
-        <br><p>El primer juego consiste en ingresar un usuario y contraseña que ya se encuentran establecidos dentro del codigo, para que posterior a eso, la maquina te va preguntando si vas a esquivar el siguinete obstáculo, tienes opciones de "Si" y "No", donde vas contestando, en el caso que esquives el obstáculo te saldrá un mensaje de "Mut bien! has evitado el obstáculo" caso contrario "¡Oh no! Has chocado contra el obstáculo. Fin del juego.", asi como lo podremos ver en la siguiente imagen:</p></br>
-        <div class="im">
-            <img src="treceavo.png" alt="no vale" width="600">
-        </div>
-        <br><p>Para el siguiente juego se creó ya una interfaz dinámica, donde se puede operar para esquivar los obstáculos presentes en forma de cuadrados.</p></br>
-        <div class="im">
-            <img src="catorceavo.png" alt="no vale" width="600">
-        </div>
-        <br><p>Si desean probar o jugarlos, aqui lo pueden descargar:</p></br>
-        <div class="descarga">
-            <br><br><a href="Game/esquivo.py" class="btn-descarga icon-download" download="Juego esquivo" title="Juego esquivo"></a></br></br>
-            <br><br><a href="Game/personita.py" class="btn-descarga icon-download" download="Juego dinámico cuadrados" title="Juego dinámico cuadrados"></a></br></br>
-        </div>
-        <br><li><b>Entrenamiento de una RNA para el control de un servomotor en Python.</b></li></br>
-        <br><p>Para este proyecto, mediante un servomotor se tiene que dar el control mediante un sensor de proximidad, esto quiere decir que mientras un objeto se acerque al sensor de proximidad, el servo motor cambia de giro y empieza a girar lento, pero si el objeto que esta detectando el sensor de proximidad, se aleja va aumentando su velocidad hasta no detectar nada y realiza el cambio de giro con una velocidad constante, hasta que de nuevo el sensor de proximidad detecte un objeto y controle al servomotor.</p></br>
-        <br><p>En la siguiente imagen podremos ver el esquema de conexiones.</p></br>
-        <div class="im">
-            <img src="quinceavo.png" alt="no vale" width="600">
-        </div>
-        <br><p>Para que puedan visualizar, el entrenamiento que se realizó, adjuntaré el codigo en Python para descargar.</p></br>
-        <div class="descarga">
-            <br><br><a href="entrenamiento.py" class="btn-descarga icon-download" download="Entrenamiento RNA" title="Entrenamiento RNA"></a></br></br>
-        </div>
-        <br><li><b>Desarrollo e implementación de robot minizumo.</b></li></br>
-        <br><p>El objetivo del proyecto fue crear un robot minizumo de pelea, que se pueda manipular de dos modos, un modo autónomo y otro remotamente.</p></br>
-        <br><p>En el modo autónomo, se crearon estratégias para que durante la batalla, el robot mediante sensores pueda detectar al oponente y reaccionar para que asi pueda sacar del dojo al contrincante y ganar. Para esto, se desarrollo el código en Arduino, donde se programaron a los sensores y las estratégias, de igual manera se creó una placa PCB para las conexiones, debido a que tiene que ir todo compacto dentro del robot, hasta para mayor comodidad y no tener cables por fuera. Por último se realizó la conexión a un mando para maniobrarlo remotamente.</p></br> 
-        <br><p>En la siguiente imagen se podrá visualizar la creacion de la placa, que fue desarrollada en Kicad.</p></br>
-        <div class="im">
-            <img src="diesiseisavo.png" alt="no vale" width="600">
-        </div>
-        <br><p>Si desea ver el desarrollo de la placa en Kicad, dar clic en el icono para descargar:</p></br>
-        <div class="descarga">
-            <br><br><a href="placaminisumo/mini/mini.kicad_pcb" class="btn-descarga icon-download" download="PCB Minizumo" title="PCB Minizumo"></a></br></br>
-        </div>
-        <br><p>De igual manera, si se desea ver el diseño 3D del chasis del robot Minizumo, da clic en descargar:</p></br>
-        <div class="descarga">
-            <br><br><a href="case_final.stl" class="btn-descarga icon-download" download="Case Minizumo" title="Case Minizumo"></a></br></br>
-        </div>
-    </div>
-</section>
-
-<section class="tercero">
-    <div>
-        <br><h2><a name="CV"><b>Descargar CV Luis Alvarado Cruz</b></a></h2></br> 
-    </div>
-    <div class="descarga">
-        <br><br><a href="CV LUIS ALVARADO CRUZ.pdf" class="btn-descarga icon-download" download="CV Luis Alvarado Cruz" title="CV Luis Alvarado Cruz"></a></br></br>
-    </div>
-    
-</section>
-
-<footer>
-    <div class="footerContainer">
-        <div>
-            <br><h2><a name="Contacto"><b>Contacto</b></a></h2></br>
-        </div>
-        <div class="socialIcons">
-            <a href="https://w.app/HomeAutoationCorp"><i class="fa-brands fa-whatsapp"></i></a>
-            <a href="https://www.linkedin.com/in/luis-alvarado-cruz-327206266"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://twitter.com/luis1799215"><i class="fa-brands fa-x"></i></a>
+    </section>
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.linkedin.com/in/luis-alvarado-cruz-327206266?trk=contact-info"><i class="fa-brands fa-linkedin-in"></i></a>
             <a href="https://github.com/Luis587"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.instagram.com/iot_developments?igsh=MXVudGx3aDQ2bHdicA%3D%3D&utm_source=qr"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://twitter.com/luis1799215"><i class="fa-brands fa-x"></i></a>
         </div>
-        <div class="footerNav">
-            <u1>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#Sobre mi..">Sobre mi</a></li>
-                <li><a href="#Proyectos">Proyectos</a></li>
-                <li><a href="#CV">CV</a></li>
-            </u1>
-        </div>
-    </div>
-    <div class="footerBottom">
-        <p>Copyright &copy; 2023; Designed by <span class="designer">Luis</span></p> 
-    </div>
-</footer>
+    </footer>
+
+    <script src="scrip.js"></script>
 
 </body>
 </html>
