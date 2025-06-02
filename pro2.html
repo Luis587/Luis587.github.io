@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="estilo2.css">
+</head>
+<body>
+    <!--Menu Encabezado-->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <i class="fa-solid fa-xmarks-lines" style="color: #ffffff;"></i>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#pro">Luis</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+    </div>
+
+    <!--Seccion Proyecto-->
+    <section id="pro" class="pro">
+        <div class="slider">
+            <input type="radio" name="slider" id="slide1" checked>
+            <input type="radio" name="slider" id="slide2">
+
+            <div class="slides">
+                <div class="slide" id="s1"></div>
+                <div class="slide" id="s2"></div>
+            </div>
+
+            <div class="controls">
+                <label for="slide1" class="control"></label>
+                <label for="slide2" class="control"></label>
+            </div>
+        </div>
+        <div class="contenido-seccion">
+            <br><h1><b>Vision por computador, Estación de distribución (Festo).</b></h1></br>
+            <br><p>Explicación breve:
+                   La estación de Distribución se encarga de (como su nombre mismo lo dice) distribuir unas piezas cilindricas. Dentro de dicha estación es posible colocar hasta ocho piezas en el tubo del almacén de apilado, se dispone de un cilindro de doble efecto, el cual expulsa las piezas individualmente. 
+                   El brazo de transporte sujeta la pieza separada por medio de una ventosa. El brazo del cambiador, que es accionado por un actuador giratorio, va ha transportar la pieza al punto de transferencia de la estación siguiente. Básicamente de eso se trata.</p>
+            <br><p>Se desarrolló un sistema de visión por computadora orientado a la detección y clasificación de piezas cilíndricas de distintos colores: rojo, negro y gris. El objetivo principal del sistema es identificar en tiempo real las piezas del color previamente seleccionado por el operador y permitir su paso, deteniendo automáticamente el proceso si se detecta una pieza de color no correspondiente.
+                   El flujo operativo del sistema es el siguiente: al iniciar, el usuario enciende la cámara, selecciona el color objetivo desde la interfaz y da clic en el botón "Iniciar". A partir de ese momento, las piezas comienzan a desplazarse frente al sistema de visión. Si en cualquier momento se detecta una pieza de un color distinto al previamente configurado, el sistema interrumpe automáticamente el proceso hasta que se restablezca la condición deseada.
+                   Este enfoque asegura una clasificación precisa, robusta y autónoma, ideal para entornos industriales donde la confiabilidad y la consistencia son fundamentales.
+            </p>
+            <br><p>Para la ejecución de este proyecto, se usaron las siguientes tecnologías:</p>
+            <p><li>Programación en Python, donde se realizó la interfaz de control</li></p>
+            <p><li>Programación de microcontrolador ESP32, para el accionamiento del PLC y la comunicación con la interfaz</li></p>
+            <p><li>Impresión 3D, para soporte de cámara</li></p>
+            <p><li>Cámara</li></p>
+            <br><p>Aqui se puede visualizar el diagrama de flujos de todo el sistema:</p>
+            <a href="DIAGRAMADEFLUJOPYTHON-ARDUINO.pdf" download>
+                <button>
+                    Descargar <i class="fa-solid fa-cloud-arrow-down"></i>
+                    <span class="overlay"></span>
+                </button>
+            </a>
+        </div>
+    </section>
+</body>
+</html>
