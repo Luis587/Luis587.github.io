@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="estilo1.css">
+</head>
+<body>
+    <!--Menu Encabezado-->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <i class="fa-solid fa-xmarks-lines" style="color: #ffffff;"></i>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#pro">Luis</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+    </div>
+
+    <!--Seccion Proyecto-->
+    <section id="pro" class="pro">
+        <div class="slider">
+            <input type="radio" name="slider" id="slide1" checked>
+            <input type="radio" name="slider" id="slide2">
+            <input type="radio" name="slider" id="slide3">
+            <input type="radio" name="slider" id="slide4">
+            <input type="radio" name="slider" id="slide5">
+            <input type="radio" name="slider" id="slide6">
+            <input type="radio" name="slider" id="slide7">
+            <input type="radio" name="slider" id="slide8">
+            <input type="radio" name="slider" id="slide9">
+
+            <div class="slides">
+                <div class="slide" id="s1"></div>
+                <div class="slide" id="s2"></div>
+                <div class="slide" id="s3"></div>
+                <div class="slide" id="s4"></div>
+                <div class="slide" id="s5"></div>
+                <div class="slide" id="s6"></div>
+                <div class="slide" id="s7"></div>
+                <div class="slide" id="s8"></div>
+                <div class="slide" id="s9"></div>
+            </div>
+
+            <div class="controls">
+                <label for="slide1" class="control"></label>
+                <label for="slide2" class="control"></label>
+                <label for="slide3" class="control"></label>
+                <label for="slide4" class="control"></label>
+                <label for="slide5" class="control"></label>
+                <label for="slide6" class="control"></label>
+                <label for="slide7" class="control"></label>
+                <label for="slide8" class="control"></label>
+                <label for="slide9" class="control"></label>
+            </div>
+        </div>
+        <div class="contenido-seccion">
+            <br><h1><b>Desarrollo industria 4.0, Estación de distribución (Festo).</b></h1></br>
+            <br><p>Explicación breve:
+            La estación de Distribución se encarga de (como su nombre mismo lo dice) distribuir unas piezas cilindricas. Dentro de dicha estación es posible colocar hasta ocho piezas en el tubo del almacén de apilado, se dispone de un cilindro de doble efecto, el cual expulsa las piezas individualmente. 
+            El brazo de transporte sujeta la pieza separada por medio de una ventosa. El brazo del cambiador, que es accionado por un actuador giratorio, va ha transportar la pieza al punto de transferencia de la estación siguiente. Básicamente de eso se trata.</p>
+            <br><p>Lo que se realizó para dicha estación fue agregarle un HMI en Node-red, con el objetivo de poder operar la estación en una pantalla y no directamente en el panel que contiene la estación, donde va mostrando el proceso que realiza. El enfoque a la industria 4.0, lo que se hizo fue que los datos vayan a la nube, de igual manera para poder operar desde el celular (remotamente) y poder dar accion en cualquier momento. 
+            Adicional se agrego un control mediante un asistente de voz, para que de igual manera inicie o pare el proceso.</p>
+        </div>
+    </section>
+</body>
+</html>
