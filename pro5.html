@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="estilo5.css">
+</head>
+<body>
+    <!--Menu Encabezado-->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <i class="fa-solid fa-xmarks-lines" style="color: #ffffff;"></i>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#pro">Luis</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+    </div>
+
+    <!--Seccion Proyecto-->
+    <section id="pro" class="pro">
+        <div class="slider">
+            <input type="radio" name="slider" id="slide1" checked>
+            <input type="radio" name="slider" id="slide2">
+
+            <div class="slides">
+                <div class="slide" id="s1"></div>
+                <div class="slide" id="s2"></div>
+            </div>
+
+            <div class="controls">
+                <label for="slide1" class="control"></label>
+                <label for="slide2" class="control"></label>
+            </div>
+        </div>
+        <div class="contenido-seccion">
+            <br><h1><b>Juegos creados en Python</b></h1></br>
+            <br><p>Se desarrollaron dos aplicaciones en Python con enfoque en la lógica de evasión de obstáculos, implementando conceptos de programación estructurada e interacción con el usuario.</p>
+            <br><h1><p><b>Esquivo de obtáculos con interfaz gráfica</b></h1></p>
+            <br><p>El primer proyecto consiste en un videojuego con interfaz gráfica, donde el jugador controla un personaje o elemento móvil utilizando las teclas de dirección del teclado (izquierda y derecha) para evitar colisiones con obstáculos que aparecen en pantalla. Este juego fue desarrollado utilizando bibliotecas como pygame, lo que permitió gestionar gráficos en tiempo real, eventos de entrada, colisiones y lógica de puntuación.</p>
+            <br><h1><p><b>Esquivo de obstáculos sin interfaz gráfica</b></h1></p>
+            <br><p>El segundo proyecto es una versión simplificada basada en consola, sin interfaz gráfica, que simula un sistema de evasión de obstáculos ingresando primero a su usuario y de ahi esquivar los obstáculos con S de "Si" y N de "No". En este caso, el usuario interactúa ingresando decisiones S/N, acumulando puntos en función de su capacidad para evitar colisiones simuladas. Esta versión se centra en la lógica del juego, control de flujo y generación pseudoaleatoria.</p>
+            <br><p>Aqui tiene los programas para descargarse: </p>
+            <a href="esquivo.py" download>
+                <button>
+                    Descargar <i class="fa-solid fa-cloud-arrow-down"></i>
+                    <span class="overlay"></span>
+                </button>
+            </a>
+            <a href="personita.py" download>
+                <button>
+                    Descargar <i class="fa-solid fa-cloud-arrow-down"></i>
+                    <span class="overlay"></span>
+                </button>
+            </a>
+            <br><p>Para más juegos, visita mi github</p>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="estilo7.css">
+</head>
+<body>
+    <!--Menu Encabezado-->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <i class="fa-solid fa-xmarks-lines" style="color: #ffffff;"></i>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#pro">Luis</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+    </div>
+
+    <!--Seccion Proyecto-->
+    <section id="pro" class="pro">
+        <div class="slider">
+            <input type="radio" name="slider" id="slide1" checked>
+            <input type="radio" name="slider" id="slide2">
+            <input type="radio" name="slider" id="slide3">
+            <input type="radio" name="slider" id="slide4">
+            <input type="radio" name="slider" id="slide5">
+
+            <div class="slides">
+                <div class="slide" id="s1"></div>
+                <div class="slide" id="s2"></div>
+                <div class="slide" id="s3"></div>
+                <div class="slide" id="s4"></div>
+                <div class="slide" id="s5"></div>
+            </div>
+
+            <div class="controls">
+                <label for="slide1" class="control"></label>
+                <label for="slide2" class="control"></label>
+                <label for="slide3" class="control"></label>
+                <label for="slide4" class="control"></label>
+                <label for="slide5" class="control"></label>
+            </div>
+        </div>
+        <div class="contenido-seccion">
+            <br><h1><b>Sistema IoT para Automatización del Riego en Cultivo de Cacao Basado en Sensado de Humedad del Suelo y Ambiente</b></h1></br>
+            <br><p>Se diseñó e implementó un sistema de monitoreo y control automático de riego orientado a la optimización de las condiciones de cultivo del cacao, mediante el uso de tecnologías IoT. El sistema permite una gestión inteligente del riego en función de los niveles de humedad detectados en el suelo y en el ambiente.</p>
+            <br><p>Para el control del riego, se integró un sensor de humedad del suelo, el cual monitorea en tiempo real el contenido hídrico de la tierra. Cuando el nivel de humedad desciende por debajo de un umbral definido, el sistema activa automáticamente una bomba de agua para iniciar el riego. Una vez que el sensor detecta que la humedad ha alcanzado un nivel óptimo o excedido un umbral superior, la bomba se desactiva, evitando el exceso de agua y promoviendo el uso eficiente del recurso hídrico.</p>
+            <br><p>Adicionalmente, se incorporó un sensor de humedad ambiental con el objetivo de monitorear las condiciones climáticas locales y asegurar un entorno propicio para el desarrollo del cacao. Esta información puede ser utilizada para análisis posteriores o futuras mejoras del sistema mediante lógica predictiva.</p>
+            <br><p>La interfaz de usuario fue desarrollada utilizando la plataforma Blynk, que permite la visualización remota de los datos y el control manual del sistema desde un dispositivo móvil. El sistema está basado en microcontroladores compatibles con IoT, y se comunica a través de protocolos como Wi-Fi y MQTT, permitiendo una supervisión eficiente y en tiempo real. Este proyecto integra conceptos de agricultura de precisión, automatización, control en lazo cerrado, y plataformas de IoT, ofreciendo una solución escalable y adaptable a diferentes entornos agrícolas.</p>
+            <br><p>Aquí se ve el código fuente de la programación de la ESP32 en Arduino</p>
+            <a href="Plan_de_tratamiento_humedad_con_Blynk.ino" download>
+                <button>
+                    Descargar <i class="fa-solid fa-cloud-arrow-down"></i>
+                    <span class="overlay"></span>
+                </button>
+            </a>
+        </div>
+    </section>
+</body>
+</html>

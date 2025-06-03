@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="estilo4.css">
+</head>
+<body>
+    <!--Menu Encabezado-->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <i class="fa-solid fa-xmarks-lines" style="color: #ffffff;"></i>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#pro">Luis</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+    </div>
+
+    <!--Seccion Proyecto-->
+    <section id="pro" class="pro">
+        <div class="slider">
+            <input type="radio" name="slider" id="slide1" checked>
+            <input type="radio" name="slider" id="slide2">
+
+            <div class="slides">
+                <div class="slide" id="s1"></div>
+                <div class="slide" id="s2"></div>
+            </div>
+
+            <div class="controls">
+                <label for="slide1" class="control"></label>
+                <label for="slide2" class="control"></label>
+            </div>
+        </div>
+        <div class="contenido-seccion">
+            <br><h1><b>Elevador controlado por asistente de voz</b></h1></br>
+            <br><p>Se diseñó e implementó un sistema elevador automatizado dentro de un entorno de coworking especializado en robótica, con el propósito de optimizar el uso del espacio físico. El elevador incorpora una plataforma móvil destinada al almacenamiento de robots, permitiendo su resguardo cuando no están en operación y su despliegue cuando se requiere su utilización.</p>
+            <br><p>El Sistema fue desarrollado con un enfoque funcional y espacial, permitiendo que la plataforma descienda automáticamente para facilitar el acceso a los robots y se eleve cuando no están en uso, liberando así el área para otras actividades dentro del coworking. Esta solución maximiza la eficiencia del espacio disponible y contribuye a una organización operativa más flexible.
+            </p>
+            <br><p>Como parte del desarrollo del sistema de elevador, se implementó un módulo de control por voz (ALEXA) que permite accionar el mecanismo de elevación mediante comandos verbales. Este asistente de voz fue acoplado al sistema de automatización para gestionar las órdenes de ascenso y descenso de la plataforma, proporcionando una interfaz de usuario intuitiva y manos libres.</p>
+            <br><p>Durante el desarrollo del sistema de control por voz del elevador, se implementó una arquitectura basada en Amazon Alexa como interfaz principal de interacción. La integración se logró mediante Node-RED, plataforma que permitió establecer flujos de comunicación entre los dispositivos compatibles con Alexa y el sistema embebido.</p>
+            <br><p>El procesamiento de los comandos de voz se canalizó a través de Node-RED, el cual actúa como puente entre el ecosistema de Alexa y el protocolo MQTT. Este protocolo se utilizó para la transmisión eficiente de mensajes hacia una ESP32, la cual opera como unidad de control en tiempo real.</p>
+            <br><p>La ESP32 recibe los comandos MQTT y ejecuta las acciones correspondientes para la activación o desactivación de los dos motores del elevador, controlando de manera precisa los movimientos de ascenso y descenso. Esta arquitectura distribuye adecuadamente las funciones entre los distintos componentes, permitiendo un control confiable, escalable y de bajo consumo energético.</p>
+            <br><p>Aquí se ve el código fuente de la programación de la ESP32 en Arduino</p>
+            <a href="motorestesis.ino" download>
+                <button>
+                    Descargar <i class="fa-solid fa-cloud-arrow-down"></i>
+                    <span class="overlay"></span>
+                </button>
+            </a>
+        </div>
+    </section>
+</body>
+</html>

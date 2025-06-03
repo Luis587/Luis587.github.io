@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="estilo6.css">
+</head>
+<body>
+    <!--Menu Encabezado-->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <i class="fa-solid fa-xmarks-lines" style="color: #ffffff;"></i>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#pro">Luis</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+    </div>
+
+    <!--Seccion Proyecto-->
+    <section id="pro" class="pro">
+        <div class="slider">
+            <input type="radio" name="slider" id="slide1" checked>
+            <input type="radio" name="slider" id="slide2">
+
+            <div class="slides">
+                <div class="slide" id="s1"></div>
+                <div class="slide" id="s2"></div>
+            </div>
+
+            <div class="controls">
+                <label for="slide1" class="control"></label>
+                <label for="slide2" class="control"></label>
+            </div>
+        </div>
+        <div class="contenido-seccion">
+            <br><h1><b>Entrenamiento de una Red Neuronal Artificial (RNA)</b></h1></br>
+            <br><p>Este proyecto consistió en el diseño y entrenamiento de una red neuronal artificial con el objetivo de implementar un sistema inteligente de detección y evasión de obstáculos en embarcaciones autónomas. El enfoque se centró en simular un entorno marítimo donde el barco, equipado con sensores de proximidad, es capaz de identificar la presencia de icebergs y ejecutar maniobras de evasión de forma autónoma.</p>
+            <br><p>La red neuronal fue entrenada utilizando un conjunto de datos simulados que representaban diferentes escenarios de proximidad y orientación de los icebergs. A partir de estos datos, el modelo aprendió a reconocer patrones de peligro inminente y a generar respuestas adecuadas en tiempo real.
+            </p>
+            <br><p>Una vez detectado un iceberg en el entorno, la red neuronal calcula la mejor acción evasiva, activando los motores en dirección contraria para evitar la colisión. El sistema fue implementado utilizando herramientas de aprendizaje automático y simulación, como TensorFlow/Keras y entornos personalizados de prueba, con énfasis en el comportamiento reactivo del modelo ante condiciones dinámicas.</p>
+            <br><p>Este proyecto combina conceptos de inteligencia artificial, sensórica y automatización robótica, orientado al desarrollo de sistemas autónomos para navegación segura.</p>
+            <br><p>Para que se pueda visualizar el entrenamiento que se realizó, adjuntaré el código en Python:</p>
+            <a href="entrenamiento.py" download>
+                <button>
+                    Descargar <i class="fa-solid fa-cloud-arrow-down"></i>
+                    <span class="overlay"></span>
+                </button>
+            </a>
+        </div>
+    </section>
+</body>
+</html>
