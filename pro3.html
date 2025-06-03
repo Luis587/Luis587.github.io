@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="estilo3.css">
+</head>
+<body>
+    <!--Menu Encabezado-->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <i class="fa-solid fa-xmarks-lines" style="color: #ffffff;"></i>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#pro">Luis</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+    </div>
+
+    <!--Seccion Proyecto-->
+    <section id="pro" class="pro">
+        <div class="slider">
+            <input type="radio" name="slider" id="slide1" checked>
+            <input type="radio" name="slider" id="slide2">
+
+            <div class="slides">
+                <div class="slide" id="s1"></div>
+                <div class="slide" id="s2"></div>
+            </div>
+
+            <div class="controls">
+                <label for="slide1" class="control"></label>
+                <label for="slide2" class="control"></label>
+            </div>
+        </div>
+        <div class="contenido-seccion">
+            <br><h1><b>Simulación y control de un elevador industrial.</b></h1></br>
+            <br><p>El objetivo principal de este proyecto fue diseñar y programar un sistema de control para un elevador automatizado, evaluando su comportamiento y precisión al detenerse en cada nivel del recorrido. La lógica de control fue desarrollada utilizando TIA Portal (Totally Integrated Automation), implementando un autómata programable (PLC) para gestionar las secuencias de movimiento, las condiciones de parada y la interacción con los sensores de piso.</p>
+            <br><p>La simulación y validación del sistema se realizaron mediante la integración con Factory I/O, una plataforma de simulación industrial 3D que permitió verificar el comportamiento dinámico del elevador en un entorno virtual. Esta comunicación entre TIA Portal y Factory I/O se estableció mediante una conexión OPC o driver compatible, permitiendo ejecutar pruebas en tiempo real y garantizar el funcionamiento adecuado del sistema antes de su implementación física.</p>
+            <br><p>Este proyecto demuestra el uso de herramientas de automatización industrial modernas para el desarrollo, prueba y simulación de sistemas mecatrónicos bajo condiciones controladas.</p>
+            <br><p>Archivo Factory IO:</p>
+            <a href="Elevador Proyecto.factoryio" download>
+                <button>
+                    Descargar <i class="fa-solid fa-cloud-arrow-down"></i>
+                    <span class="overlay"></span>
+                </button>
+            </a>
+        </div>
+    </section>
+</body>
+</html>
