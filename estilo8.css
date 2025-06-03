@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Nunito';
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;    
+}
+
+.contenedor-header{
+    background: #1e2326;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.contenedor-header header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+.contenedor-header header .logo a{
+    font-family: 'Righteous';
+    font-size: 36px;
+    color: #ffffff;
+    text-decoration: none;
+}
+.contenedor-header header ul{
+    display: flex;
+    list-style: none;
+}
+.contenedor-header header nav ul li a{
+    text-align: none;
+    color: #ffffff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+
+.contenedor-header header nav ul li a:hover{
+    color: #727272;
+}
+
+.pro {
+    background-color: #252A2E;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+/* SECCION SLIDER */
+
+.slider {
+  width: 75vw;
+  height: 75vh;
+  margin: 5rem auto;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+}
+
+.slider input {
+  display: none;
+}
+
+.slides {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  background-color: #1e2326;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex-shrink: 0;
+}
+
+/* Imágenes */
+#s1 { background-image: url(placaecu.jpeg); }
+#s2 { background-image: url(cajaecu.jpeg); }
+#s3 { background-image: url(3decu.jpeg); }
+#s4 { background-image: url(relesecu.jpeg); }
+#s5 { background-image: url(finalecu.jpeg); }
+
+/* Controles (puntos) */
+.controls {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.control {
+  width: 15px;
+  height: 15px;
+  background: rgb(77, 77, 77);
+  display: inline-block;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: box-shadow 0.3s;
+}
+
+.control:hover {
+  box-shadow: 0 0 5px 2px rgba(123, 167, 254, 0.8);
+}
+
+/* Mover slides según input seleccionado */
+#slide1:checked ~ .slides {
+  transform: translateX(0%);
+}
+#slide2:checked ~ .slides {
+  transform: translateX(-100%);
+}
+#slide3:checked ~ .slides {
+  transform: translateX(-200%);
+}
+#slide4:checked ~ .slides {
+  transform: translateX(-300%);
+}
+#slide5:checked ~ .slides {
+  transform: translateX(-400%);
+}
+
+/* SECCION TEXTO */
+.contenido-seccion {
+    text-align: justify;
+    font-size: 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+.contenido-seccion h1{
+    font-size: 25px;
+    text-align: center;
+}
+.contenido-seccion video{
+  display: block;         
+  margin: 0 auto;         
+  width: auto;             /* Ajusta esto al tamaño que desees */
+  max-height: 600px;         /* Mantiene la proporción del video */
+  border-radius: 12px;    /* Opcional, para esquinas redondeadas */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* Opcional, sombra ligera */
+}
