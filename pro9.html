@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="estilo9.css">
+</head>
+<body>
+    <!--Menu Encabezado-->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <i class="fa-solid fa-xmarks-lines" style="color: #ffffff;"></i>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#pro">Luis</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+    </div>
+
+    <!--Seccion Proyecto-->
+    <section id="pro" class="pro">
+        <div class="slider">
+            <input type="radio" name="slider" id="slide1" checked>
+            <input type="radio" name="slider" id="slide2">
+            <input type="radio" name="slider" id="slide3">
+            <input type="radio" name="slider" id="slide4">
+            <input type="radio" name="slider" id="slide5">
+
+            <div class="slides">
+                <div class="slide" id="s1"></div>
+                <div class="slide" id="s2"></div>
+                <div class="slide" id="s3"></div>
+                <div class="slide" id="s4"></div>
+                <div class="slide" id="s5"></div>
+            </div>
+
+            <div class="controls">
+                <label for="slide1" class="control"></label>
+                <label for="slide2" class="control"></label>
+                <label for="slide3" class="control"></label>
+                <label for="slide4" class="control"></label>
+                <label for="slide5" class="control"></label>
+            </div>
+        </div>
+        <div class="contenido-seccion">
+            <br><h1><b>Show de drones</b></h1></br>
+            <br><p>Este proyecto consistió en el desarrollo integral de un sistema de drones autónomos para espectáculos aéreos sincronizados, comenzando desde la construcción física del dron hasta la generación de figuras coreografiadas en el cielo nocturno.</p>
+            <br><p>Cada dron fue diseñado y ensamblado desde cero, contemplando aspectos de aerodinámica, distribución de peso, selección de motores brushless, controladores electrónicos de velocidad (ESC), y configuración de sensores de navegación (IMU, GPS y barómetro). Se utilizó el firmware ArduPilot, que fue configurado mediante la plataforma Mission Planner, permitiendo establecer parámetros de vuelo, calibración de sensores y pruebas de estabilidad.</p>
+            <br><p>Una vez configurados, los drones fueron integrados al sistema de control multi-dron Skybrush, una plataforma especializada para la gestión y ejecución de shows aéreos con múltiples UAVs. Desde Skybrush se gestionó la coordinación temporal y espacial de cada dron, garantizando la ejecución precisa y sincronizada de las trayectorias.</p>
+            <br><p>La generación de las figuras tridimensionales que los drones reproducen en el cielo fue realizada en Blender, desde donde se diseñaron las animaciones y trayectorias deseadas. Estas animaciones fueron luego exportadas y adaptadas para ser interpretadas por Skybrush, transformándolas en misiones coordinadas compatibles con los drones controlados por ArduPilot.</p>
+            <br><p>Este proyecto integra conocimientos avanzados en aeronáutica, control de vuelo, programación de misiones autónomas, diseño 3D y orquestación de flotas UAV, demostrando una solución innovadora para aplicaciones artísticas, publicitarias y de entretenimiento mediante tecnología de drones.</p>
+            <br><p><b>Video de la construcción del dron</b></p>
+            <br><video autoplay loop controls>
+                <source src="video2.mp4">
+                Tu navegador no soporta videos
+            </video>
+            <br><p><b>Video de pruebas</b></p>
+            <br><video autoplay loop controls>
+                <source src="video1.mp4">
+                Tu navegador no soporta videos
+            </video>
+        </div>
+    </section>
+</body>
+</html>
